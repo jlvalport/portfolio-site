@@ -1,0 +1,33 @@
+header {
+	margin-top: 40px;
+}
+
+.header-container {
+	width: 67%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo-container {
+	text-align: center;
+}
+
+#header-image {
+	height: 125px;
+}
+
+.header-info-container {
+	text-align: center;
+	width: auto;
+	padding-top: 15px;
+}
+
+.section-container {
+	width: 67%;
+	margin: 35px auto 0;
+}
+
+#world-image {
+	width: auto;
+}
