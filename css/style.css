@@ -1,5 +1,11 @@
 header {
-	margin-top: 40px;
+	background-image: url('../img/smartphone-at-the-beach.jpg');
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .header-container {
