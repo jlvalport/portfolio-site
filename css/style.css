@@ -8,25 +8,43 @@ header {
 	align-items: center;
 }
 
-.header-container {
+/* .header-container {
 	width: 67%;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
-}
+} */
 
 .header-logo-container {
 	text-align: center;
+	position: absolute;
 }
 
 #header-image {
-	height: 125px;
+	height: 225px;
 }
 
 .header-info-container {
 	text-align: center;
-	width: auto;
+/* 	width: auto; */
 	padding-top: 15px;
+	z-index: 1;
+}
+
+.header-name {
+	font-size: 55px;
+	color: white;
+	text-shadow: 2px 2px #000;
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	margin-bottom: 0;
+}
+
+.header-description {
+	color: yellow;
+	text-shadow: 2px 2px #000;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-weight: 100;
+	margin-top: 0;
 }
 
 .section-container {
