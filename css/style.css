@@ -93,7 +93,13 @@ header {
 	width: 86%;
 	/* margin-left: 14%; */
 	padding: 0 0 11px 0;
-	background-color: #d9d9d9;
+
+	background: #d9d9d9;
+	background: -webkit-linear-gradient(left top,#b3b3b3, #d9d9d9);
+	background: -o-linear-gradient(bottom right,#b3b3b3, #d9d9d9);
+	background: -moz-linear-gradient(bottom right,#b3b3b3, #d9d9d9);
+	background: linear-gradient(to bottom right,#b3b3b3, #d9d9d9);
+
 	display: flex;
 	flex-direction: row;
 
@@ -102,11 +108,12 @@ header {
 }
 
 .section-title {
-	color: gray;
+	color: white;
+	text-shadow: 1px 1px 2px #334d4d;
 	font-weight: 100;
 	margin: 0;
 	font-size: 45px;
-	padding: 0 0 0 15px;
+	padding: 0 0 0 35px;
 
 	position: absolute;
 	top: 50%;
@@ -116,7 +123,7 @@ header {
 .deck {
 	display: flex;
 	flex-direction: row;
-	margin: 40px 10% 40px;
+	margin: 40px 10% 15px;
 }
 
 .work-card {
@@ -149,12 +156,29 @@ footer {
 	text-align: center;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 	font-size: 25px;
-	background-color: #f0f5f5;
+
+	background: #2d862d;
+	background: -webkit-linear-gradient(left top,#2d862d, #267326);
+	background: -o-linear-gradient(bottom right,#2d862d, #267326);
+	background: -moz-linear-gradient(bottom right,#2d862d, #267326);
+	background: linear-gradient(to bottom right,#2d862d, #267326);
+
 	margin: 0;
 	padding: 1px 0;
-	color: black;
+	color: white;
 	text-shadow: 1px 1px 2px #334d4d;
 	font-weight: 100;
+	height: 100px;
+	position: relative;
+	align-items: center;
+}
+
+footer > p {
+	position: absolute;
+	top: 50%;
+	margin: -14px 0 0 -133px;
+	left: 50%;
+
 }
 
 /* .year {
