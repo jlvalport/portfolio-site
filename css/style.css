@@ -2,11 +2,14 @@ header {
 	background-image: url('../img/smartphone-at-the-beach.jpg');
 	height: 100vh;
 	background-size: cover;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .header-logo-container {
-	text-align: center;
+	
 }
 
 #header-image {
@@ -58,26 +61,62 @@ header {
 .content-works {
 	display: flex;
 	flex-direction: column;
-	padding: 0 0 15px;
+	padding: 0 0 15px 0;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
 .section-title-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.bullet-point {
+	width: 14%;
+	text-align: center;
+	vertical-align: 50%;
+
+	position: relative;
+	background-color: black;
+/* 	height: 100px; */
+}
+
+#bathtube-icon {
+	font-size: 50px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+}
+
+.title-container {
 	width: 86%;
-	padding-left: 14%;
-/* 	background-color: #d9d9d9; */
+	/* margin-left: 14%; */
+	padding: 0 0 11px 0;
+	background-color: #d9d9d9;
+	display: flex;
+	flex-direction: row;
+
+	position: relative;
+	height: 100px;
 }
 
 .section-title {
 	color: gray;
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 	font-weight: 100;
-	margin-bottom: 0;
+	margin: 0;
+	font-size: 45px;
+	padding: 0 0 0 15px;
+
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
 }
 
 .deck {
 	display: flex;
 	flex-direction: row;
-	margin: 10px 10% 0;
+	margin: 40px 10% 40px;
 }
 
 .work-card {
@@ -90,11 +129,15 @@ header {
 .work-title-container {
 	width: 100%;
 	text-align: center;
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
 .title {
 	font-weight: 500;
+}
+
+.work-link {
+	margin: 0;
+	padding: 16px 0;
 }
 
 .work-image {
