@@ -36,17 +36,80 @@ header {
 
 .header-description {
 	color: yellow;
-	text-shadow: 2px 2px #000;
+	text-shadow: 2px 2px 8px #000;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	font-weight: 100;
 	margin-top: 0;
 }
 
-.section-container {
-	width: 67%;
-	margin: 35px auto 0;
+/* .header-description > .word-developer {
+	text-shadow: 1px 3px #000;
+} */
+
+#word-developer {
+	/* color: #003399; */
 }
 
-#world-image {
-	width: auto;
+/* .section-container {
+	width: 67%;
+	margin: 35px auto 0;
+} */
+
+.content-works {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 15px;
+}
+
+.section-title-container {
+	width: 86%;
+	padding-left: 14%;
+/* 	background-color: #d9d9d9; */
+}
+
+.section-title {
+	color: gray;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+
+.deck {
+	display: flex;
+	flex-direction: row;
+	margin: 10px 10% 0;
+}
+
+.work-card {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+
+}
+
+.work-title-container {
+	width: 100%;
+	text-align: center;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+/* .title {
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+} */
+
+.work-image {
+	width: 90%;
+	margin: 0 10%;
+}
+
+footer {
+	text-align: center;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	font-size: 25px;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 1px 0;
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+	font-weight: 100;
 }
