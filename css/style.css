@@ -93,9 +93,9 @@ header {
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
-/* .title {
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
-} */
+.title {
+	font-weight: 500;
+}
 
 .work-image {
 	width: 90%;
@@ -106,10 +106,14 @@ footer {
 	text-align: center;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 	font-size: 25px;
-	background-color: #f2f2f2;
+	background-color: #f0f5f5;
 	margin: 0;
 	padding: 1px 0;
-	color: white;
-	text-shadow: 2px 2px 2px #000;
+	color: black;
+	text-shadow: 1px 1px 2px #334d4d;
 	font-weight: 100;
 }
+
+/* .year {
+	font-size: 15px;
+} */
