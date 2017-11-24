@@ -130,7 +130,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	width: 33%;
+	padding: 10px 0;
+}
 
+.image-container {
+	text-align: center;
 }
 
 .work-title-container {
@@ -149,13 +153,14 @@ header {
 
 .work-image {
 	width: 90%;
-	margin: 0 10%;
+	margin: 0 auto;
+	border-radius: 5px;
 }
 
 footer {
 	text-align: center;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
-	font-size: 25px;
+	font-size: 21px;
 
 	background: #2d862d;
 	background: -webkit-linear-gradient(left top,#2d862d, #267326);
@@ -176,7 +181,7 @@ footer {
 footer > p {
 	position: absolute;
 	top: 50%;
-	margin: -14px 0 0 -133px;
+	margin: -12px 0 0 -112px;
 	left: 50%;
 
 }
