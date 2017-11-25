@@ -14,7 +14,7 @@ header {
 }
 
 .header-logo-container {
-	
+	position: sticky;
 }
 
 #header-image {
