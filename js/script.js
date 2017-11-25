@@ -6,33 +6,25 @@
 
 $(document).ready(function() {
 	const coverSlideshow = {
-		
+		numberOfImages: 12,
+		imageCount: 1,
 		init: function() {
 			coverSlideshow.changeColor();
 			coverSlideshow.startSlideshow();
 			
 
 		},
-		numberOfImages: 12,
-		imageCount: 1,
 		startSlideshow: function() {
 			$('header').fadeOut(2000);
 			setTimeout(function() {
 				$('header').css('background-image', 'url(\'img/image' + coverSlideshow.imageCount + '.jpg\')'); 
 			}, 2000);
 			$('header').fadeIn(2000);
-			
 			coverSlideshow.imageCount = coverSlideshow.imageCount - 1;
 			if (coverSlideshow.imageCount === 0) {
 				coverSlideshow.imageCount = coverSlideshow.numberOfImages;
-			}
-
+			};
 			setTimeout(coverSlideshow.startSlideshow, 20000);
-
-
-			console.log('One image should appear');
-			console.log('777777');
-
 		},
 		changeColor: function() {
 			$('.header-name').on('click', function () {
