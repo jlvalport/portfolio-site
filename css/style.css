@@ -1,5 +1,5 @@
 header {
-	background-image: url('../img/smartphone-at-the-beach.jpg');
+	background-image: url('../img/image3.jpg');
 	height: 100vh;
 	background-size: cover;
 	display: flex;
@@ -8,12 +8,17 @@ header {
 	align-items: center;
 }
 
+#header {
+	height: 100vh;
+	background-color: black;
+}
+
 .header-logo-container {
 	
 }
 
 #header-image {
-	height: 225px;
+	height: 125px;
 }
 
 .header-section {
@@ -26,7 +31,7 @@ header {
 .header-info-container {
 	text-align: center;
 /* 	width: auto; */
-	padding-top: 15px;
+	/* padding-top: 15px; */
 }
 
 .header-name {
@@ -34,7 +39,7 @@ header {
 	color: white;
 	text-shadow: 2px 2px #000;
 	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .header-description {
@@ -58,11 +63,21 @@ header {
 	margin: 35px auto 0;
 } */
 
+section {
+	height: 78%;
+}
+
+article {
+/* 	height: 77vh; */
+}
+
 .content-works {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	padding: 0 0 15px 0;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	height: 66vh;
 }
 
 .section-title-container {
@@ -70,15 +85,15 @@ header {
 	flex-direction: row;
 }
 
-.bullet-point {
+/* .bullet-point {
 	width: 14%;
 	text-align: center;
 	vertical-align: 50%;
 
 	position: relative;
 	background-color: black;
-/* 	height: 100px; */
-}
+	height: 100px;
+} */
 
 #bathtube-icon {
 	font-size: 50px;
@@ -92,18 +107,18 @@ header {
 .title-container {
 	width: 86%;
 	/* margin-left: 14%; */
-	padding: 0 0 11px 0;
+	padding: 0;
 
-	background: #d9d9d9;
-	background: -webkit-linear-gradient(left top,#b3b3b3, #d9d9d9);
+ 	background: white;
+/* 	background: -webkit-linear-gradient(left top,#b3b3b3, #d9d9d9);
 	background: -o-linear-gradient(bottom right,#b3b3b3, #d9d9d9);
 	background: -moz-linear-gradient(bottom right,#b3b3b3, #d9d9d9);
 	background: linear-gradient(to bottom right,#b3b3b3, #d9d9d9);
+ */
+/* 	display: flex;
+	flex-direction: row; */
 
-	display: flex;
-	flex-direction: row;
-
-	position: relative;
+	margin: 0;
 	height: 100px;
 }
 
@@ -113,17 +128,18 @@ header {
 	font-weight: 100;
 	margin: 0;
 	font-size: 45px;
-	padding: 0 0 0 35px;
+	padding: 0 0 0 10%;
 
-	position: absolute;
-	top: 50%;
-	margin-top: -25px;
+	/* position: absolute; */
+	/* top: 50%;
+	margin-top: -25px; */
 }
 
 .deck {
 	display: flex;
 	flex-direction: row;
-	margin: 40px 10% 15px;
+	margin: 0 10% 0;
+	
 }
 
 .work-card {
@@ -158,10 +174,6 @@ header {
 }
 
 footer {
-	text-align: center;
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
-	font-size: 21px;
-
 	background: #2d862d;
 	background: -webkit-linear-gradient(left top,#2d862d, #267326);
 	background: -o-linear-gradient(bottom right,#2d862d, #267326);
@@ -169,21 +181,26 @@ footer {
 	background: linear-gradient(to bottom right,#2d862d, #267326);
 
 	margin: 0;
-	padding: 1px 0;
-	color: white;
-	text-shadow: 1px 1px 2px #334d4d;
-	font-weight: 100;
-	height: 100px;
-	position: relative;
+	padding: 0;
+	
+	height: 1vh;
+
 	align-items: center;
 }
 
-footer > p {
-	position: absolute;
-	top: 50%;
+.contact-info {
+	position: relative;
+	/* top: 50%;
 	margin: -12px 0 0 -112px;
-	left: 50%;
-
+	left: 50%; */
+	
+	font-size: 21px;
+	width: 100%;
+	color: black;
+	text-shadow: 1px 1px 100px #334d4d;
+	font-weight: 100;
+	text-align: center;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
 /* .year {
