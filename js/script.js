@@ -28,7 +28,7 @@ $(document).ready(function() {
 			console.log('This is the first randomIndex: '+randomIndex); // <-----------
 			let checkImageHistory = coverSlideshow.imageHistory(randomIndex);
 			while (checkImageHistory === true) {
-				randomIndex = Math.floor(Math.random() * maxNumberOfImages);
+				randomIndex = Math.floor(Math.random() * maxNumberOfImages + 1);
 				console.log('This is the new randomIndex after the while: '+randomIndex); // <-----------
 				checkImageHistory = coverSlideshow.imageHistory(randomIndex)
 			};
