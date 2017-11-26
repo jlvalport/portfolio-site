@@ -2,7 +2,7 @@ $(document).ready(function() {
 	const coverSlideshow = {
 		numberOfImages: 12,
 		imageCount: 1,
-		secondsWaitingBetweenImages: 5,
+		secondsWaitingBetweenImages: 15,
 		imageNumberShown: [0],
 		init: function() {
 			coverSlideshow.changeColor();
