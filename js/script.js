@@ -1,38 +1,55 @@
-
-
-
-
-
-
 $(document).ready(function() {
 	const coverSlideshow = {
 		numberOfImages: 12,
 		imageCount: 1,
-		secondsWaiting: 6,
+		secondsWaitingBetweenImages: 5,
+		imageNumberShown: [0],
 		init: function() {
 			coverSlideshow.changeColor();
 			coverSlideshow.startSlideshow();
-			
-
+		},
+		imageHistory: function(testNumber) {
+			for (let ImageShown of coverSlideshow.imageNumberShown) {
+				if (testNumber === ImageShown) {
+					console.log('passed a number and TRUE <-------'); // <----------
+					return true;
+				};	
+			};
+			coverSlideshow.imageNumberShown.push(testNumber);
+			return false
+		},
+		randomImageSelector: function(maxNumberOfImages) {
+			if (coverSlideshow.numberOfImages === (coverSlideshow.imageNumberShown.length - 1)) {
+				console.log(coverSlideshow.imageNumberShown); // <-----------
+				coverSlideshow.imageNumberShown = [0];
+				console.log('imageNumberShown just RESETED'); // <-----------
+			};
+			let randomIndex = Math.floor(Math.random() * (maxNumberOfImages + 1));
+			console.log('This is the first randomIndex: '+randomIndex); // <-----------
+			let checkImageHistory = coverSlideshow.imageHistory(randomIndex);
+			while (checkImageHistory === true) {
+				randomIndex = Math.floor(Math.random() * maxNumberOfImages);
+				console.log('This is the new randomIndex after the while: '+randomIndex); // <-----------
+				checkImageHistory = coverSlideshow.imageHistory(randomIndex)
+			};
+			console.log('This is the randomIndex that got through randomImageSelector: '+randomIndex); // <-----------
+			return randomIndex
 		},
 		startSlideshow: function() {
-			
 			setTimeout(function() {
+				coverSlideshow.imageCount = coverSlideshow.randomImageSelector(coverSlideshow.numberOfImages);
+				console.log('This is the randomIndex before its passed in slideShow: '+coverSlideshow.imageCount); // <-----------
 				$('header').fadeOut(2000);
 				setTimeout(function() {
 					$('header').css('background-image', 'url(\'img/image' + coverSlideshow.imageCount + '.jpg\')'); 
 					console.log('change image'); // <----------
 				}, 2000);
 				$('header').fadeIn(2000);
-				coverSlideshow.imageCount = coverSlideshow.imageCount - 1;
-				if (coverSlideshow.imageCount === 0) {
-					coverSlideshow.imageCount = coverSlideshow.numberOfImages;
-				};
-			}, (coverSlideshow.secondsWaiting+'000'));
-			console.log('Start again'); // <----------
+			}, (coverSlideshow.secondsWaitingBetweenImages+'000'));
 			setTimeout(function() {
+				console.log('Start again'); // <----------
 				coverSlideshow.startSlideshow();
-			}, (coverSlideshow.secondsWaiting+'000'));
+			}, (coverSlideshow.secondsWaitingBetweenImages+'000'));
 		},
 		changeColor: function() {
 			$('.header-name').on('click', function () {
@@ -40,7 +57,6 @@ $(document).ready(function() {
 			});
 		}
 	};
-
 	coverSlideshow.init();
 
 	const moveArticleUpwards = {
