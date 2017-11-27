@@ -1,3 +1,10 @@
+#header {
+	height: 100vh;
+	background-color: black;
+	position: relative;
+	z-index: -2;
+}
+
 header {
 	background-image: url('../img/image0.jpg');
 	height: 100vh;
@@ -6,11 +13,6 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-#header {
-	height: 100vh;
-	background-color: black;
 }
 
 .header-logo-container {
@@ -105,7 +107,7 @@ article {
 }
 
 .title-container {
-	width: 86%;
+	width: 100%;
 	/* margin-left: 14%; */
 	padding: 0;
 
@@ -129,6 +131,8 @@ article {
 	margin: 0;
 	font-size: 45px;
 	padding: 0 0 0 10%;
+
+	z-index: -1;
 
 	/* position: absolute; */
 	/* top: 50%;

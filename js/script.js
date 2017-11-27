@@ -59,60 +59,60 @@ $(document).ready(function() {
 	};
 	coverSlideshow.init();
 
-	const moveArticleUpwards = {
+	function prefix() {
+		var styles = window.getComputedStyle(document.documentElement, ''),
+		pre = (Array.prototype.slice
+			.call(styles)
+			.join('') 
+			.match(/-(moz|webkit|ms)-/) || (styles.OLink === '' && ['', 'o']))[1],
+		dom = ('WebKit|Moz|MS|O').match(new RegExp('(' + pre + ')', 'i'))[1];
+		return {
+			dom: dom,
+			lowercase: pre,
+			css: '-' + pre + '-',
+			js: pre[0].toUpperCase() + pre.substr(1)
+		};
+	};
+
+	const pre = prefix();
+
+	const moveArticleTitleUpwards = {
+		
+		jsPrefix: pre.lowercase,
+		scrollPercent: 0,
+		scrollHeight: 0,
+		containerHeight: 4000,
+
 		init: function() {
-			// $(window).detectScroll({
-			// 	testMode: true,
-			// 	targetPercent: 90,
-			// 	position: 'top',
-			// 	objectHeight: 350,
-			// 	target: '#section-title'
-			// });
-		},
-		moveUpwards: function () {
-			$('.title-container').animate({ 
-        		marginBottom: "+=250px",
-			 }, 1000 );
-		},
-		autoScrollTo: function() {
-			// let currentY = window.pageYOffset;
-			// let targetY = document.getElementById(el).offsetTop;
-			// let bodyHeight = document.body.offsetHeight;
-			// let yPos = currentY + window.innerHeight;
+			if(moveArticleTitleUpwards.jsPrefix == 'moz') moveArticleTitleUpwards.jsPrefix = 'Moz'
+			// console.log('scrollTop value from document: '+$(document).scrollTop()) // <-----------
+			// console.log('scrollTop value from window: '+$(window).scrollTop()) // <-----------
 
-		// 	$(window).scroll(function(){
-				
-		// 		// Change this to target a different percentage
-		// 		var targetPercentage = 90;
-			   
-		// 		//Change this to set the height of your nav bar so it hides properly. If you have a box shadow you may have to adjust this number to be height + shadow distance
-		// 		var titleHeight = 66;
-			   
-		// 		//Change this to the ID of the content you are trying to show.
-		// 		var targetID = "#section-title";
-				
-		// 		//Window Math
-		// 		var scrollTo = $(window).scrollTop(),
-		// 		docHeight = $(document).height(),
-		// 		windowHeight = $(window).height();
-		// 		scrollPercent = (scrollTo / (docHeight-windowHeight)) * 100;
-		// 		scrollPercent = scrollPercent.toFixed(1);
-					
-		// 		$('.content-works').push().last().html(<)
-
-		// 		if(scrollPercent > targetPercentage) {
-		// 			$(targetID).css({ 'color': blue });
-		// 		}
-				
-		// 		if(scrollPercent < targetPercentage) {
-		// 			$(targetID).css({ 'margin-top': 0 });
-		// 		}
-										
-		// 	}).trigger('scroll');
+			moveArticleTitleUpwards.resize();
+			moveArticleTitleUpwards.loop();
+		},
+		resize: function() {
+			height = window.innerHeight;
+			moveArticleTitleUpwards.scrollHeight = moveArticleTitleUpwards.containerHeight-height;
+		},
+		move: function () {
+			// console.log('The function move should have fired') // <----------
+			// console.log('This is the scrollPercent: '+moveArticleTitleUpwards.scrollPercent) // <----------
+			$('#section-title').css('transform', 'translate3d(0px, -'+(moveArticleTitleUpwards.scrollPercent*600)+'px, 0px)');
+			// document.getElementById('section-title').style[moveArticleTitleUpwards.jsPrefix+'Transform'] = 'translate3d(0px, '+moveArticleTitleUpwards.scrollPercent+'px, 0px)';
+		},
+		loop: function() {
+			scrollOffset = window.pageYOffset || window.scrollTop;
+			moveArticleTitleUpwards.scrollPercent = scrollOffset/moveArticleTitleUpwards.scrollHeight || 0;
+			
+			
+			moveArticleTitleUpwards.move();
+			
+			requestAnimationFrame(moveArticleTitleUpwards.loop);
 		}
 	};
 
-	moveArticleUpwards.init();
+	moveArticleTitleUpwards.init();
 });
 
 
