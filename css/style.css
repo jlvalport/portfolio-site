@@ -6,7 +6,7 @@
 }
 
 header {
-	background-image: url('../img/image0.jpg');
+	background-image: url('../img/cover-images/image0.jpg');
 	height: 100vh;
 	background-size: cover;
 	display: flex;
@@ -66,7 +66,7 @@ header {
 } */
 
 section {
-	height: 78%;
+	height: 100%;
 }
 
 article {
@@ -79,7 +79,7 @@ article {
 	flex-direction: column;
 	padding: 0 0 15px 0;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
-	height: 66vh;
+	height: 100%;
 }
 
 .section-title-container {
@@ -127,9 +127,9 @@ article {
 .section-title {
 	color: white;
 	text-shadow: 1px 1px 2px #334d4d;
+	font-size: 100px;
 	font-weight: 100;
 	margin: 0;
-	font-size: 45px;
 	padding: 0 0 0 10%;
 
 	z-index: -1;
@@ -140,17 +140,30 @@ article {
 }
 
 .deck {
-	display: flex;
+	/* display: flex;
 	flex-direction: row;
-	margin: 0 10% 0;
-	
+	flex: auto;
+	flex-wrap: wrap;
+	margin: 0 auto 0; */
+
+	display: grid;
+	grid-template-columns: repeat(3, minmax(300px, 33%));
+	grid-template-rows: repeat(auto, 1fr);
+	margin: 0 auto;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	text-align: center;
 }
 
 .work-card {
 	display: flex;
 	flex-direction: column;
-	width: 33%;
+	max-width: 400px;
+	width: 100%;
 	padding: 10px 0;
+	clear: both;
 }
 
 .image-container {
@@ -175,21 +188,12 @@ article {
 	width: 90%;
 	margin: 0 auto;
 	border-radius: 5px;
+	opacity: 0.9;
 }
 
-footer {
-	background: #2d862d;
-	background: -webkit-linear-gradient(left top,#2d862d, #267326);
-	background: -o-linear-gradient(bottom right,#2d862d, #267326);
-	background: -moz-linear-gradient(bottom right,#2d862d, #267326);
-	background: linear-gradient(to bottom right,#2d862d, #267326);
-
-	margin: 0;
-	padding: 0;
-	
-	height: 1vh;
-
-	align-items: center;
+.work-image:hover {
+	opacity: 1;
+	transform: scale(1.004,1.004);
 }
 
 .contact-info {
@@ -206,6 +210,18 @@ footer {
 	text-align: center;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
+
+footer {
+	margin: 0;
+	padding: 0;
+	height: 1vh;
+	background: #2d862d;
+	background: -webkit-linear-gradient(left top,#2d862d, #267326);
+	background: -o-linear-gradient(bottom right,#2d862d, #267326);
+	background: -moz-linear-gradient(bottom right,#2d862d, #267326);
+	background: linear-gradient(to bottom right,#2d862d, #267326);
+}
+
 
 /* .year {
 	font-size: 15px;

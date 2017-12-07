@@ -41,7 +41,7 @@ $(document).ready(function() {
 				console.log('This is the randomIndex before its passed in slideShow: '+coverSlideshow.imageCount); // <-----------
 				$('header').fadeOut(2000);
 				setTimeout(function() {
-					$('header').css('background-image', 'url(\'img/image' + coverSlideshow.imageCount + '.jpg\')'); 
+					$('header').css('background-image', 'url(\'img/cover-images/image'+coverSlideshow.imageCount+'.jpg\')'); 
 					console.log('change image'); // <----------
 				}, 2000);
 				$('header').fadeIn(2000);
@@ -84,7 +84,7 @@ $(document).ready(function() {
 		containerHeight: 4000,
 
 		init: function() {
-			if(moveArticleTitleUpwards.jsPrefix == 'moz') moveArticleTitleUpwards.jsPrefix = 'Moz'
+			if(moveArticleTitleUpwards.jsPrefix == 'moz') {moveArticleTitleUpwards.jsPrefix = 'Moz'};
 			// console.log('scrollTop value from document: '+$(document).scrollTop()) // <-----------
 			// console.log('scrollTop value from window: '+$(window).scrollTop()) // <-----------
 
