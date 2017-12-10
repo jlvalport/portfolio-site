@@ -1,3 +1,7 @@
+a {
+	color: #fff;
+}
+
 #header {
 	height: 100vh;
 	background-color: black;
@@ -7,27 +11,44 @@
 
 header {
 	background-image: url('../img/cover-images/image0.jpg');
+	background-position: center;
+	background-attachment: fixed;
 	height: 100vh;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
+	position: relative;
+	z-index: 1;
 }
 
 .header-logo-container {
-	position: sticky;
+	/* justify-content: center;
+	align-items: center; */
+	height: 50%;
 }
 
 #header-image {
-	height: 175px;
+	height: 200px;
+/* &:hover {
+	height: 201px;
+} */
 }
+
+#header-image:hover {
+	height: 201px;
+}
+
 
 .header-section {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+/* 	justify-content: center; */
 	align-items: center;
+
+	height: 50%;
+	margin-top: -2.5em;
 }
 
 .header-info-container {
@@ -56,9 +77,9 @@ header {
 	text-shadow: 1px 3px #000;
 } */
 
-#word-developer {
-	/* color: #003399; */
-}
+/* #word-developer {
+	color: #fff;
+} */
 
 /* .section-container {
 	width: 67%;
@@ -70,7 +91,7 @@ section {
 }
 
 article {
-/* 	height: 77vh; */
+	
 }
 
 .content-works {
@@ -80,11 +101,7 @@ article {
 	padding: 0 0 15px 0;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 	height: 100%;
-}
 
-.section-title-container {
-	display: flex;
-	flex-direction: row;
 }
 
 /* .bullet-point {
@@ -107,6 +124,7 @@ article {
 }
 
 .title-container {
+	position: relative;
 	width: 100%;
 	/* margin-left: 14%; */
 	padding: 0;
@@ -122,6 +140,10 @@ article {
 
 	margin: 0;
 	height: 100px;
+	background-color: white;
+
+
+
 }
 
 .section-title {
@@ -140,43 +162,67 @@ article {
 }
 
 .deck {
-	/* display: flex;
+	display: flex;
 	flex-direction: row;
 	flex: auto;
-	flex-wrap: wrap;
-	margin: 0 auto 0; */
+	margin: 0;
 
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(3, minmax(300px, 33%));
 	grid-template-rows: repeat(auto, 1fr);
-	margin: 0 auto;
+	margin: 0 auto; */
 
-	display: flex;
-	flex-wrap: wrap;
+	/* display: flex;
+	flex-wrap: wrap; */
 
 	text-align: center;
+	position: relative;
+
+	height: 100%;
 }
 
 .work-card {
 	display: flex;
 	flex-direction: column;
-	max-width: 400px;
-	width: 100%;
-	padding: 10px 0;
-	clear: both;
+	/* max-width: 400px; */
+	width: 33%;
+	height: 100%;
+	
+	padding: 0 20px;
+
+
 }
 
+/* .iphone-card {
+	background-color: #666;
+}
+
+.sunflower-card {
+	background-color: purple;	
+}
+
+.night-card {
+	background-color: orange;
+} */
+
 .image-container {
-	text-align: center;
+	position: relative;
+	height: 100%;
 }
 
 .work-title-container {
 	width: 100%;
 	text-align: center;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(6, 6, 6, 0.5);
+	padding: 10px 0 0 0;
 }
 
 .title {
 	font-weight: 500;
+	margin: 0;
+	color: white;
 }
 
 .work-link {
@@ -185,16 +231,35 @@ article {
 }
 
 .work-image {
-	width: 90%;
-	margin: 0 auto;
-	border-radius: 5px;
-	opacity: 0.9;
+	width: 100%;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	/* background-attachment: fixed; */
+	
+	margin: 0;
+	/* border-radius: 5px;
+	opacity: 0.9; */
+	clear: both;
+
 }
 
-.work-image:hover {
+.iphone-image {
+	background-image: url('../img/app-store-iphone.jpg');
+}
+
+.sunflower-image {
+	background-image: url('../img/sunflower-seeds.jpg');
+}
+
+.night-image {
+	background-image: url('../img/sky-night.jpg');
+}
+
+/* .work-image:hover {
 	opacity: 1;
 	transform: scale(1.004,1.004);
-}
+} */
 
 .contact-info {
 	position: relative;
@@ -203,12 +268,20 @@ article {
 	left: 50%; */
 	
 	font-size: 21px;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 	width: 100%;
-	color: black;
+	color: white;
 	text-shadow: 1px 1px 100px #334d4d;
 	font-weight: 100;
 	text-align: center;
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	margin: 0;
+	padding: 20px 0 10px;
+
+	background: -webkit-linear-gradient(#fff 25%, #2d862d 75%);
+	background: -o-linear-gradient(#fff 25%, #2d862d 75%);
+	background: -moz-linear-gradient(#fff 25%, #2d862d 75%);
+	background: linear-gradient(#fff 25%, #2d862d 75%);
+
 }
 
 footer {
