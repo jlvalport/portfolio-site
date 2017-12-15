@@ -2,11 +2,11 @@ a {
 	color: #fff;
 }
 
-#header {
+#header-bg {
 	height: 100vh;
 	background-color: black;
 	position: relative;
-	z-index: -2;
+	z-index: -1;
 }
 
 header {
@@ -17,44 +17,27 @@ header {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	position: relative;
-	z-index: 1;
+	z-index: 0;
+	scroll-snap-coordinate: 0% 0%;
 }
 
 .header-logo-container {
-	/* justify-content: center;
-	align-items: center; */
 	height: 50%;
 }
 
 #header-image {
 	height: 200px;
-/* &:hover {
-	height: 201px;
-} */
 }
-
-#header-image:hover {
-	height: 201px;
-}
-
 
 .header-section {
 	display: flex;
 	flex-direction: column;
-/* 	justify-content: center; */
 	align-items: center;
-
 	height: 50%;
 	margin-top: -2.5em;
-}
-
-.header-info-container {
 	text-align: center;
-/* 	width: auto; */
-	/* padding-top: 15px; */
 }
 
 .header-name {
@@ -66,182 +49,105 @@ header {
 }
 
 .header-description {
+	font-size: 25px;
 	color: yellow;
 	text-shadow: 2px 2px 8px #000;
-	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	font-weight: 100;
 	margin-top: 0;
 }
 
-/* .header-description > .word-developer {
-	text-shadow: 1px 3px #000;
-} */
-
-/* #word-developer {
-	color: #fff;
-} */
-
-/* .section-container {
-	width: 67%;
-	margin: 35px auto 0;
-} */
-
 section {
-	height: 100%;
-}
-
-article {
-	
+	position: relative;
+	height: 75vh;
+	width: 100%;
+	z-index: 2;
 }
 
 .content-works {
 	position: relative;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 0 0 15px 0;
+	align-items: center;
 	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
-	height: 100%;
-
-}
-
-/* .bullet-point {
-	width: 14%;
-	text-align: center;
-	vertical-align: 50%;
-
-	position: relative;
-	background-color: black;
-	height: 100px;
-} */
-
-#bathtube-icon {
-	font-size: 50px;
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -25px 0 0 -25px;
+	z-index: auto;
 }
 
 .title-container {
 	position: relative;
 	width: 100%;
-	/* margin-left: 14%; */
+	height: 25px;
 	padding: 0;
-
- 	background: white;
-/* 	background: -webkit-linear-gradient(left top,#b3b3b3, #d9d9d9);
-	background: -o-linear-gradient(bottom right,#b3b3b3, #d9d9d9);
-	background: -moz-linear-gradient(bottom right,#b3b3b3, #d9d9d9);
-	background: linear-gradient(to bottom right,#b3b3b3, #d9d9d9);
- */
-/* 	display: flex;
-	flex-direction: row; */
-
 	margin: 0;
-	height: 100px;
 	background-color: white;
-
-
-
+	z-index: auto;
 }
 
 .section-title {
 	color: white;
-	text-shadow: 1px 1px 2px #334d4d;
+	text-shadow: 2px 2px 2px #334d4d;
 	font-size: 100px;
 	font-weight: 100;
 	margin: 0;
 	padding: 0 0 0 10%;
-
-	z-index: -1;
-
-	/* position: absolute; */
-	/* top: 50%;
-	margin-top: -25px; */
+	position: absolute;
+	z-index: -4;
 }
 
 .deck {
+	height: inherit;
+	width: 100%;
+	max-width: 1265px;
 	display: flex;
 	flex-direction: row;
-	flex: auto;
+	/* flex: auto; */
 	margin: 0;
-
-	/* display: grid;
-	grid-template-columns: repeat(3, minmax(300px, 33%));
-	grid-template-rows: repeat(auto, 1fr);
-	margin: 0 auto; */
-
-	/* display: flex;
-	flex-wrap: wrap; */
-
 	text-align: center;
 	position: relative;
-
-	height: 100%;
+	padding: 0 0 20px 0;
 }
 
 .work-card {
-	display: flex;
-	flex-direction: column;
-	/* max-width: 400px; */
-	width: 33%;
-	height: 100%;
-	
-	padding: 0 20px;
-
-
-}
-
-/* .iphone-card {
-	background-color: #666;
-}
-
-.sunflower-card {
-	background-color: purple;	
-}
-
-.night-card {
-	background-color: orange;
-} */
-
-.image-container {
 	position: relative;
-	height: 100%;
-}
-
-.work-title-container {
-	width: 100%;
-	text-align: center;
-	bottom: 0;
-	position: absolute;
-	background-color: rgba(6, 6, 6, 0.5);
-	padding: 10px 0 0 0;
-}
-
-.title {
-	font-weight: 500;
-	margin: 0;
-	color: white;
-}
-
-.work-link {
-	margin: 0;
-	padding: 16px 0;
+	width: 33%;
+	margin: 0 0.7%;
+	height: inherit;
 }
 
 .work-image {
 	width: 100%;
-	height: 400px;
+	height: 100%;
 	background-position: center;
 	background-size: cover;
-	/* background-attachment: fixed; */
-	
 	margin: 0;
-	/* border-radius: 5px;
-	opacity: 0.9; */
-	clear: both;
+	border-radius: 7px;
 
+	filter: grayscale(100%); /* Current draft standard */
+	-webkit-filter: grayscale(100%); /* New WebKit */
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
+	filter: url(resources.svg#desaturate); /* Gecko */
+	filter: gray; /* IE */
+	-webkit-filter: grayscale(1); /* Old WebKit */
+
+	transition-duration: 3s;
+}
+
+.work-image:hover {
+	filter: none; /* Current draft standard */
+	-webkit-filter: none; /* New WebKit */
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none; /* Not yet supported in Gecko, Opera or IE */
+	filter: none; /* IE */
+	-webkit-filter: none; /* Old WebKit */
+
+	opacity: 1;
+	transform: scale(1.004,1.004);
+	transition-duration: 700ms;
 }
 
 .iphone-image {
@@ -256,32 +162,26 @@ article {
 	background-image: url('../img/sky-night.jpg');
 }
 
-/* .work-image:hover {
-	opacity: 1;
-	transform: scale(1.004,1.004);
-} */
-
-.contact-info {
-	position: relative;
-	/* top: 50%;
-	margin: -12px 0 0 -112px;
-	left: 50%; */
-	
-	font-size: 21px;
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+.work-title-container {
 	width: 100%;
-	color: white;
-	text-shadow: 1px 1px 100px #334d4d;
-	font-weight: 100;
 	text-align: center;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(6, 6, 6, 0.5);
+	padding: 10px 0 0 0;
+	border-radius: 0 0 7px 7px;
+}
+
+.title {
+	font-weight: 500;
 	margin: 0;
-	padding: 20px 0 10px;
+	color: white;
+	text-transform: uppercase;
+}
 
-	background: -webkit-linear-gradient(#fff 25%, #2d862d 75%);
-	background: -o-linear-gradient(#fff 25%, #2d862d 75%);
-	background: -moz-linear-gradient(#fff 25%, #2d862d 75%);
-	background: linear-gradient(#fff 25%, #2d862d 75%);
-
+.work-link {
+	margin: 0;
+	padding: 16px 0;
 }
 
 footer {
@@ -295,7 +195,7 @@ footer {
 	background: linear-gradient(to bottom right,#2d862d, #267326);
 }
 
-
-/* .year {
-	font-size: 15px;
-} */
+/*
+TODO: fix the z-index problem for .section-title
+TODO: make the header section clickable
+*/

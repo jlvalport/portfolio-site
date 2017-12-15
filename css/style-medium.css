@@ -1,0 +1,20 @@
+.deck {
+	height: inherit;
+	width: 100%;
+	max-width: 1265px;
+  display: inline-flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	/* flex: auto; */
+	margin: 0;
+	text-align: center;
+	position: relative;
+	padding: 0 0 20px 0;
+}
+
+.work-card {
+	position: relative;
+	width: 48.6%;
+	margin: 0 0.7%;
+	height: inherit;
+}

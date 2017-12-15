@@ -1,0 +1,22 @@
+.deck {
+
+	width: 100%;
+	max-width: 1265px;
+  display: flex;
+	flex-direction: column;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	padding: 0 0 20px 0;
+}
+
+.work-card {
+	position: relative;
+	width: 98.6%;
+	margin: 0 0.7%;
+	height: inherit;
+}
+
+.section-title {
+  font-size: 80px;
+}
