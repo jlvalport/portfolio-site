@@ -1,9 +1,9 @@
 #header-image {
-	height: 160px;
+	height: 130px;
 }
 
 .header-name {
-	font-size: 50px;
+	font-size: 35px;
 	color: white;
 	text-shadow: 2px 2px #000;
 	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
@@ -27,6 +27,8 @@ section {
 }
 
 .title-container {
+	display: flex;
+	align-items: center;
 	position: relative;
 	width: 100%;
 	height: 25px;
@@ -35,17 +37,18 @@ section {
 	background-color: white;
 	z-index: auto;
 
-	display: flex;
-	justify-content: center;
+transform: translate3d(0px, 20px, 0px)
 }
 
 .section-title {
+	display: inline-block;
 	color: white;
 	text-shadow: 2px 2px 2px #334d4d;
-	font-size: 90px;
+	font-size: 48px;
 	font-weight: 100;
-
+	margin: 0 auto;
 	padding: 0;
+	position: relative;
 	z-index: -4;
 }
 
@@ -68,6 +71,21 @@ section {
 	height: 75vh;
 }
 
-/*
-TODO: make the .work-card's into a column
-*/
+.work-image {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	margin: 0;
+	border-radius: 7px;
+
+	filter: none; /* Current draft standard */
+	-webkit-filter: none; /* New WebKit */
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none; /* Not yet supported in Gecko, Opera or IE */
+	filter: none; /* IE */
+	-webkit-filter: none; /* Old WebKit */
+
+	transition-duration: 3s;
+}

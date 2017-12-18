@@ -13,7 +13,7 @@ $(document).ready(function() {
 				if (testNumber === ImageShown) {
 					console.log('passed a number and TRUE <-------'); // <----------
 					return true;
-				};	
+				};
 			};
 			coverSlideshow.imageNumberShown.push(testNumber);
 			return false
@@ -41,7 +41,7 @@ $(document).ready(function() {
 				console.log('This is the randomIndex before its passed in slideShow: '+coverSlideshow.imageCount); // <-----------
 				$('header').fadeOut(2000);
 				setTimeout(function() {
-					$('header').css('background-image', 'url(\'img/cover-images/image'+coverSlideshow.imageCount+'.jpg\')'); 
+					$('header').css('background-image', 'url(\'img/cover-images/image'+coverSlideshow.imageCount+'.jpg\')');
 					console.log('change image'); // <----------
 				}, 2000);
 				$('header').fadeIn(2000);
@@ -63,7 +63,7 @@ $(document).ready(function() {
 		var styles = window.getComputedStyle(document.documentElement, ''),
 		pre = (Array.prototype.slice
 			.call(styles)
-			.join('') 
+			.join('')
 			.match(/-(moz|webkit|ms)-/) || (styles.OLink === '' && ['', 'o']))[1],
 		dom = ('WebKit|Moz|MS|O').match(new RegExp('(' + pre + ')', 'i'))[1];
 		return {
@@ -77,7 +77,7 @@ $(document).ready(function() {
 	const pre = prefix();
 
 	const moveArticleTitleUpwards = {
-		
+
 		jsPrefix: pre.lowercase,
 		scrollPercent: 0,
 		scrollHeight: 0,
@@ -104,10 +104,10 @@ $(document).ready(function() {
 		loop: function() {
 			scrollOffset = window.pageYOffset || window.scrollTop;
 			moveArticleTitleUpwards.scrollPercent = scrollOffset/moveArticleTitleUpwards.scrollHeight || 0;
-			
-			
+
+
 			moveArticleTitleUpwards.move();
-			
+
 			requestAnimationFrame(moveArticleTitleUpwards.loop);
 		}
 	};
@@ -116,6 +116,4 @@ $(document).ready(function() {
 });
 
 
-
-
-
+// TODO: cancel the movement of .section-title in smaller screens

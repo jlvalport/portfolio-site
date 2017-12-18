@@ -1,3 +1,23 @@
+section {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+}
+
+.content-works {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	z-index: auto;
+
+
+}
+
 .deck {
 	height: inherit;
 	width: 100%;
@@ -9,12 +29,19 @@
 	margin: 0;
 	text-align: center;
 	position: relative;
-	padding: 0 0 20px 0;
+	padding: 0;
 }
 
 .work-card {
 	position: relative;
 	width: 48.6%;
-	margin: 0 0.7%;
-	height: inherit;
+	margin: 0 0.7% 20px 0.7%;
+	height: 75vh;
+	max-height: 470px;
+	padding: 0;
 }
+
+
+/*
+TODO: make the .work-card's centered and wrap
+*/

@@ -5,16 +5,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" media="screen and (max-width:1140px)" href="css/style-medium.css">
-	<link rel="stylesheet" media="screen and (max-width:700px)" href="css/style-small.css">
+	<link rel="stylesheet" media="screen and (min-width:701px) and (max-width:1140px)" href="css/style-medium.css">
+	<link rel="stylesheet" media="screen and (min-width:451px) and (max-width:700px)" href="css/style-small.css">
+	<link rel="stylesheet" media="screen and (min-width:371px) and (max-width:450px)" href="css/style-x-small.css">
+	<link rel="stylesheet" media="screen and (min-width:0px) and (max-width:370px)" href="css/style-xx-small.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 	<div id="header-bg">
 		<header>
-
 			<div class="header-logo-container">
 				<a href="#section-title">
 					<img id="header-image" src="img/Front-end-logo-color.png" alt="Front end developer logo">
@@ -24,19 +25,10 @@
 					<h1 class="header-name">José Luis Valencia</h1>
 					<h3 class="header-description">Front End Web Developer</h3>
 			</div>
-
 		</header>
 	</div>
-
 	<section>
 		<div class="content-works">
-
-			<!--
-			<div class="bullet-point">
-				<i id="bathtube-icon" class="fa fa-bath" aria-hidden="true"></i>
-			</div>
-			-->
-
 			<div class="title-container">
 				<h1 id="section-title" class="section-title">Feature Work</h1>
 			</div>
@@ -62,23 +54,21 @@
 					</div>
 				</div>
 				<div class="work-card">
-					<a href="https://github.com/udacity/Bokeh/">
-						<div class="work-image night-image">
-							<div class="work-title-container">
+					<div class="work-image night-image">
+						<div class="work-title-container">
+							<a href="https://github.com/udacity/Bokeh/">
 								<h2 class="title">bokeh</h2>
-								<a href="https://github.com/udacity/Bokeh/">
-									<p class="work-link">https://github.com/udacity/Bokeh/</p>
-								</a>
-							</div>
+								<p class="work-link">https://github.com/udacity/Bokeh/</p>
+							</a>
 						</div>
-					</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer></footer>
 </body>
-<script type="text/javascript" src="js/script.js"></script>
+<script src="js/script.js"></script>
 </html>
 
 <!--
