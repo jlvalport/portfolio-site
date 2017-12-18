@@ -2,6 +2,12 @@ a {
 	color: #fff;
 }
 
+/*
+
+Landing page settings
+
+*/
+
 #header-bg {
 	height: 100vh;
 	background-color: black;
@@ -57,6 +63,12 @@ header {
 	margin-top: 0;
 }
 
+/*
+
+Content space settings
+
+*/
+
 section {
 	position: relative;
 	height: 75vh;
@@ -92,7 +104,7 @@ section {
 	font-weight: 100;
 	margin: 0;
 	padding: 0 0 0 10%;
-	position: absolute;
+	position: relative;
 	z-index: -4;
 }
 
@@ -102,7 +114,6 @@ section {
 	max-width: 1265px;
 	display: flex;
 	flex-direction: row;
-	/* flex: auto; */
 	margin: 0;
 	text-align: center;
 	position: relative;
@@ -195,7 +206,184 @@ footer {
 	background: linear-gradient(to bottom right,#2d862d, #267326);
 }
 
+@media screen and (min-width: 701px) and (max-width: 1140px) {
+	section {
+		height: 100%;
+	}
+
+	.deck {
+		display: inline-flex;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.work-card {
+		height: 75vh;
+		width: 48.6%;
+		margin: 0 0.7% 20px 0.7%;
+		max-height: 470px;
+	}
+}
+
+@media screen and (min-width:521px) and (max-width:700px) {
+	section {
+		height: 100%;
+	}
+
+	.title-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.section-title {
+		padding: 0;
+	}
+
+	.deck {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.work-card {
+		width: 98.6%;
+		height: 75vh;
+		margin: 0 0.7% 1.4%;
+	}
+
+	.work-image {
+		filter: none; /* Current draft standard */
+		-webkit-filter: none; /* New WebKit */
+		-moz-filter: none;
+		-ms-filter: none;
+		-o-filter: none; /* Not yet supported in Gecko, Opera or IE */
+		filter: none; /* IE */
+		-webkit-filter: none; /* Old WebKit */
+	}
+
+	.work-title-container {
+		font-size: 1.6em;
+		height: 33%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width:521px) and (max-width:585px) {
+	.section-title {
+		font-size: 5em;
+	}
+}
+
+@media screen and (min-width:371px) and (max-width:520px) {
+	#header-image {
+		height: 160px;
+	}
+
+	.header-name {
+		font-size: 40px;
+	}
+
+	.header-description {
+		font-size: 18px;
+	}
+
+	section {
+		height: 100%;
+	}
+
+	.title-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: translate3d(0px, 20px, 0px)
+	}
+
+	.section-title {
+		display: inline-block;
+		font-size: 3.7em;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.deck {
+		padding: 0;
+		flex-direction: column;
+	}
+
+	.work-card {
+		position: relative;
+		width: 98.6%;
+		margin: 0 0.7% 1.4%;
+		height: 75vh;
+	}
+
+	.work-image {
+		filter: none; /* Current draft standard */
+		-webkit-filter: none; /* New WebKit */
+		-moz-filter: none;
+		-ms-filter: none;
+		-o-filter: none; /* Not yet supported in Gecko, Opera or IE */
+		filter: none; /* IE */
+		-webkit-filter: none; /* Old WebKit */
+	}
+}
+
+@media screen and (min-width:0px) and (max-width:370px) {
+	#header-image {
+		height: 130px;
+	}
+
+	.header-name {
+		font-size: 35px;
+	}
+
+	.header-description {
+		font-size: 18px;
+	}
+
+	section {
+		height: 100%;
+	}
+
+	.title-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: translate3d(0px, 20px, 0px)
+	}
+
+	.section-title {
+		font-size: 3.3em;
+		padding: 0;
+	}
+
+	.deck {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.work-card {
+		width: 98.6%;
+		margin: 0 0.7% 1.4%;
+		height: 75vh;
+		max-height: 570px;
+	}
+
+	.work-image {
+		filter: none; /* Current draft standard */
+		-webkit-filter: none; /* New WebKit */
+		-moz-filter: none;
+		-ms-filter: none;
+		-o-filter: none; /* Not yet supported in Gecko, Opera or IE */
+		filter: none; /* IE */
+		-webkit-filter: none; /* Old WebKit */
+	}
+}
+
 /*
 TODO: fix the z-index problem for .section-title
 TODO: make the header section clickable
+TODO: change work-title container height
 */
