@@ -42,12 +42,12 @@ header {
 	flex-direction: column;
 	align-items: center;
 	height: 50%;
-	margin-top: -2.5em;
+	margin: -2.5em 0 0 0;
 	text-align: center;
 }
 
 .header-name {
-	font-size: 55px;
+	font-size: 3.6em;
 	color: white;
 	text-shadow: 2px 2px #000;
 	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
@@ -55,7 +55,7 @@ header {
 }
 
 .header-description {
-	font-size: 25px;
+	font-size: 1.6em;
 	color: yellow;
 	text-shadow: 2px 2px 8px #000;
 	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
@@ -282,11 +282,11 @@ footer {
 	}
 
 	.header-name {
-		font-size: 40px;
+		font-size: 2.5em;
 	}
 
 	.header-description {
-		font-size: 18px;
+		font-size: 1.4em;
 	}
 
 	section {
@@ -301,9 +301,7 @@ footer {
 	}
 
 	.section-title {
-		display: inline-block;
 		font-size: 3.7em;
-		margin: 0 auto;
 		padding: 0;
 	}
 
@@ -332,15 +330,15 @@ footer {
 
 @media screen and (min-width:0px) and (max-width:370px) {
 	#header-image {
-		height: 130px;
+		height: 140px;
 	}
 
 	.header-name {
-		font-size: 35px;
+		font-size: 2.1em;
 	}
 
 	.header-description {
-		font-size: 18px;
+		font-size: 1.3em;
 	}
 
 	section {
