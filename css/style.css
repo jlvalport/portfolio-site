@@ -16,7 +16,7 @@ Landing page settings
 }
 
 header {
-	background-image: url('../img/cover-images/image0.jpg');
+	background-image: url(../img/cover-images/image0.jpg);
 	background-position: center;
 	background-attachment: fixed;
 	height: 100vh;
@@ -46,14 +46,14 @@ header {
 }
 
 .header-name {
-	font: 500 3.6em Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font: 500 3.6em Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	color: #fff;
 	text-shadow: 2px 2px #000;
 	margin: 0;
 }
 
 .header-description {
-	font: 100 1.6em Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font: 100 1.6em Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	color: #ed4;
 	text-shadow: 2px 2px 4px #000;
 	margin-top: 0;
@@ -79,7 +79,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	z-index: auto;
 }
 
@@ -158,15 +158,15 @@ section {
 }
 
 .iphone-image {
-	background-image: url('../img/app-store-iphone.jpg');
+	background-image: url(../img/app-store-iphone.jpg);
 }
 
 .sunflower-image {
-	background-image: url('../img/sunflower-seeds.jpg');
+	background-image: url(../img/sunflower-seeds.jpg);
 }
 
 .night-image {
-	background-image: url('../img/sky-night.jpg');
+	background-image: url(../img/sky-night.jpg);
 }
 
 .work-title-container {
