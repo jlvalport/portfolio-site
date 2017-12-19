@@ -2,12 +2,12 @@
 
 This is a responsive full screen landing page website.
 
-## How to set up the slideshow
+## How to: slideshow
 
 The slideshow changes images by changing the image number from the list of images in this folder:
-`img/cover-images/image<#>.jpg`
+`img/cover-images/`
 
-* Adding more images
+### Adding more images
 
 1. Rename the images to this format:
 `image#.jpg`
