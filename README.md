@@ -2,7 +2,7 @@
 
 This is a responsive full screen landing page website.
 
-## How to: slideshow
+## How to: Slideshow
 
 The slideshow changes images by changing the image number from the list of images in this folder:
 `img/cover-images/`
