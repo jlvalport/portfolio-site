@@ -8,9 +8,9 @@ Landing page settings
 
 */
 
-#header-bg {
+.header-bg {
 	height: 100vh;
-	background-color: black;
+	background-color: #000;
 	position: relative;
 	z-index: -1;
 }
@@ -26,14 +26,13 @@ header {
 	align-items: center;
 	position: relative;
 	z-index: 0;
-	scroll-snap-coordinate: 0% 0%;
 }
 
 .header-logo-container {
 	height: 50%;
 }
 
-#header-image {
+.header-image {
 	height: 200px;
 }
 
@@ -47,19 +46,16 @@ header {
 }
 
 .header-name {
-	font-size: 3.6em;
-	color: white;
+	font: 500 3.6em Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	color: #fff;
 	text-shadow: 2px 2px #000;
-	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	margin: 0;
 }
 
 .header-description {
-	font-size: 1.6em;
-	color: yellow;
-	text-shadow: 2px 2px 8px #000;
-	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-	font-weight: 100;
+	font: 100 1.6em Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	color: #ed4;
+	text-shadow: 2px 2px 4px #000;
 	margin-top: 0;
 }
 
@@ -93,13 +89,13 @@ section {
 	height: 25px;
 	padding: 0;
 	margin: 0;
-	background-color: white;
+	background-color: #fff;
 	z-index: auto;
 }
 
 .section-title {
-	color: white;
-	text-shadow: 2px 2px 2px #334d4d;
+	color: #fff;
+	text-shadow: 2px 2px 2px #366;
 	font-size: 100px;
 	font-weight: 100;
 	margin: 0;
@@ -186,7 +182,7 @@ section {
 .title {
 	font-weight: 500;
 	margin: 0;
-	color: white;
+	color: #fff;
 	text-transform: uppercase;
 }
 
@@ -199,11 +195,11 @@ footer {
 	margin: 0;
 	padding: 0;
 	height: 1vh;
-	background: #2d862d;
-	background: -webkit-linear-gradient(left top,#2d862d, #267326);
-	background: -o-linear-gradient(bottom right,#2d862d, #267326);
-	background: -moz-linear-gradient(bottom right,#2d862d, #267326);
-	background: linear-gradient(to bottom right,#2d862d, #267326);
+	background: #383;
+	background: -webkit-linear-gradient(left top,#383, #272);
+	background: -o-linear-gradient(bottom right,#383, #272);
+	background: -moz-linear-gradient(bottom right,#383, #272);
+	background: linear-gradient(to bottom right,#383, #272);
 }
 
 @media screen and (min-width: 701px) and (max-width: 1140px) {
@@ -277,7 +273,7 @@ footer {
 }
 
 @media screen and (min-width:371px) and (max-width:520px) {
-	#header-image {
+	.header-image {
 		height: 160px;
 	}
 
@@ -329,7 +325,7 @@ footer {
 }
 
 @media screen and (min-width:0px) and (max-width:370px) {
-	#header-image {
+	.header-image {
 		height: 140px;
 	}
 
