@@ -67,7 +67,7 @@ Content space settings
 
 section {
 	position: relative;
-	height: 75vh;
+	height: 100%;
 	width: 100%;
 	z-index: 2;
 }
@@ -110,17 +110,19 @@ section {
 	max-width: 1265px;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	margin: 0;
 	text-align: center;
 	position: relative;
-	padding: 0 0 20px 0;
+	padding: 0;
 }
 
 .work-card {
 	position: relative;
-	width: 33%;
+	width: 31.93%;
 	margin: 0 0.7%;
-	height: inherit;
+	height: 63vh;
+	max-height:
 }
 
 .work-image {
@@ -191,6 +193,10 @@ section {
 	padding: 16px 0;
 }
 
+.contact-info {
+	width: 100%;
+}
+
 footer {
 	margin: 0;
 	padding: 0;
@@ -210,7 +216,6 @@ footer {
 	.deck {
 		display: inline-flex;
 		flex-wrap: wrap;
-		padding: 0;
 	}
 
 	.work-card {
@@ -218,6 +223,16 @@ footer {
 		width: 48.6%;
 		margin: 0 0.7% 20px 0.7%;
 		max-height: 470px;
+	}
+
+	.contact-info {
+		width: 48.6%;
+		height: 75vh;
+		margin: 0 0.7% 20px 0.7%;
+		max-height: 470px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
@@ -237,7 +252,6 @@ footer {
 
 	.deck {
 		flex-direction: column;
-		padding: 0;
 	}
 
 	.work-card {
@@ -302,7 +316,6 @@ footer {
 	}
 
 	.deck {
-		padding: 0;
 		flex-direction: column;
 	}
 
@@ -355,7 +368,6 @@ footer {
 
 	.deck {
 		flex-direction: column;
-		padding: 0;
 	}
 
 	.work-card {
