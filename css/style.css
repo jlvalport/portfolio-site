@@ -180,7 +180,6 @@ section {
 	background-color: rgba(6, 6, 6, 0.5);
 	padding: 10px 0 0 0;
 	border-radius: 0 0 7px 7px;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -388,5 +387,4 @@ footer {
 /*
 TODO: fix the z-index problem for .section-title
 TODO: make the header section clickable
-TODO: change work-title container height
 */
